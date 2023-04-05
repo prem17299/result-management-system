@@ -1,0 +1,67 @@
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+   
+        <title>Add Record Page</title>
+        <style>
+            h1{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+<section class="vh-20" style="background-color: #508bfc;">
+  
+  <!-- <a routerLink="/list"  ><button style="margin: 6px 3px  ;" class="btn btn-danger btn-lg btn-block">Back</button></a>&nbsp; -->
+  <div class="container py-5 h-100">
+
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem; margin-top: -10vh;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Add Record</h3>
+            <form method="POST" >
+            <div class="form-outline mb-4">
+              <label class="form-label" for="rollnoid">RollNo</label>
+              <input min="1"  max="50" required name="rollno" type="number" id="rollnoid" class="form-control form-control-lg" />
+             
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="nameid">Name</label>
+              <input name="name" required type="text" id="nameid" class="form-control form-control-lg"/>
+              
+            </div>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="dobid">Date Of Birth</label>
+              <input  name="dob" required type="date" id="dobid" class="form-control form-control-lg" />
+              
+            </div>
+            <div class="form-outline mb-4">
+              <label class="form-label" for="scoreid">Score</label>
+              <input min="0" max="500" name="score" type="number" id="scoreid" class="form-control form-control-lg" required />
+              
+            </div>
+
+           
+            <button class="btn btn-primary btn-lg btn-block" type="submit ">Submit</button>&nbsp;
+
+
+<button type="reset" class="btn btn-light btn-lg btn-block">Clear</button>
+          
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
